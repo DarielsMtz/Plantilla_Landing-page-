@@ -1,6 +1,7 @@
 /* *********************************** */
 @import url(normalize.min.css);
 @import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Onest:wght@100..900&display=swap');
 
 /* *********************************** */
 /* *** ESTILOS GENERALES *** */
@@ -23,7 +24,6 @@
 
   /* Tamaños */
   --ancho-max: 1440px;
-
 }
 
 /* ******************************** */
@@ -38,6 +38,12 @@ body {
   width: 100vw;
   padding: 60px 26px;
   background-color: var(--blanco);
+  gap: 60px;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 main {
@@ -45,7 +51,8 @@ main {
   height: 420px;
   margin: 0 auto;
 
-  .banner__principal {
+  .banner__principal,
+  .caracteristicas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(1, 420px);
@@ -53,13 +60,17 @@ main {
     justify-items: center;
     align-items: center;
 
+  }
+
+  .banner__principal {
+    padding-bottom: 30px;
+
     .banner__principal__info {
       display: flex;
       flex-direction: column;
       justify-content: center;
       /* align-items: center; */
       gap: 40px;
-
 
       h1 {
         color: var(--negro);
@@ -79,7 +90,6 @@ main {
         font-weight: 400;
         line-height: 30px;
         letter-spacing: -0.5px;
-
       }
 
       .banner__principal__btn {
@@ -100,7 +110,6 @@ main {
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-          font-family: Lato;
           font-size: 14px;
           font-style: normal;
           font-weight: 400;
@@ -113,7 +122,7 @@ main {
 
   .beneficios {
     margin: 60px auto;
-    padding: 60px 90px;
+    padding: 60px 0px;
     display: flex;
     justify-content: space-around;
     gap: 60px;
@@ -140,4 +149,41 @@ main {
     }
   }
 
+
+  .caracteristicas {
+    padding: 60px 0;
+
+    .caracteristicas__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 20px;
+
+
+      padding: 30px 0;
+      color: var(--negro);
+
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.1px;
+      }
+
+      h2,
+      ul li {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        text-wrap: pretty
+      }
+
+      ul li {
+        list-style: inside;
+        line-height: 40px;
+
+      }
+    }
+  }
 }
