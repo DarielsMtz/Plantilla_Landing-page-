@@ -18,6 +18,7 @@
   /* Colores */
   --blanco: #ffffff;
   --negro: #1B1F24;
+  --seniza: #ccc;
   --gris: #F6F4FF;
   --azul: #007bff;
   --lila: #C2C3F3;
@@ -307,6 +308,78 @@ main {
           line-clamp: 3;
           -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+
+  .preguntas_frecuentes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 600px;
+    padding: 60px 0;
+
+
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -0.5px;
+    }
+
+    h4 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      padding: 15px 0;
+    }
+
+    .acordion {
+      padding: 20px 0;
+
+      .acordion__pregunta {
+        color: var(--negro);
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: all 0.4s;
+      }
+
+      .active,
+      .acordion__pregunta:hover {
+        /* background-color: #ccc; */
+        outline: 1px solid var(--seniza);
+      }
+
+      .acordion__pregunta:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .active:after {
+        content: "\2212";
+      }
+
+      .acordion__respuesta {
+        padding: 0 18px;
+        /* background-color: white; */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+
+        & p {
+          margin: 20px 0;
         }
       }
     }

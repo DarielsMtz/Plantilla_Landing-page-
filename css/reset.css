@@ -74,8 +74,7 @@ textarea {
 
 /* More friendly border */
 input,
-textarea,
-button {
+textarea {
   border: 1px solid gray;
 }
 
