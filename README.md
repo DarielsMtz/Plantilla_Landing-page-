@@ -4,6 +4,12 @@
 
 Este proyecto es una plantilla básica para una landing page, creada utilizando HTML, CSS y JavaScript. La plantilla está diseñada para ser fácilmente personalizable y adaptable a diferentes necesidades.
 
+## Tecnologías Usadas
+
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+
 ## Estructura del Proyecto
 
 El proyecto está organizado en los siguientes archivos y carpetas:
