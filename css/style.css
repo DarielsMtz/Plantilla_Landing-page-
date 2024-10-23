@@ -110,4 +110,34 @@ main {
       }
     }
   }
+
+  .beneficios {
+    margin: 60px auto;
+    padding: 60px 90px;
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+
+
+    .beneficios__carta {
+      max-width: 352px;
+      height: max-content;
+
+
+      :where(figure) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+
+        >h4 {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
 }
