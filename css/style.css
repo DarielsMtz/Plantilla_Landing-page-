@@ -255,4 +255,39 @@ main {
       }
     }
   }
+
+  .testimonios {
+    padding: 60px 0;
+
+    .testimonios__carta {
+      display: flex;
+      flex-direction: column-reverse;
+      max-width: 352px;
+      height: max-content;
+      padding: 35px 30px;
+      border-radius: var(--radius);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+        rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+
+      :where(figure) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+
+        >h4 {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        >img {
+          border-radius: 600px;
+          background: url(<path-to-image>) lightgray 50% / cover no-repeat, #F6F4FF;
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
 }
