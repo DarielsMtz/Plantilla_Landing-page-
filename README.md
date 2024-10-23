@@ -57,4 +57,4 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENS
 
 ## Copyright
 
-© 2023 @DarielsMtz. Casi todos los derechos reservados.
+© 2024 @DarielsMtz. Casi todos los derechos reservados.

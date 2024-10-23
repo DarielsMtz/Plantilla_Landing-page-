@@ -13,6 +13,16 @@
   src: url("") format("woff2"), url("") format("woff");
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 /* ******************************** */
 :root {
   /* Colores */
@@ -389,4 +399,31 @@ main {
   .banner__atencion-footer {
     background: url(../img/desktop/Content2.jpg) center/cover no-repeat;
   }
+}
+
+#btnArriba {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: var(--lila);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s ease;
+  z-index: 1000;
+}
+
+#btnArriba:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.show {
+  display: block !important;
+  animation: fadeIn 0.5s;
 }

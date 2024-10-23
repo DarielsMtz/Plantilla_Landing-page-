@@ -23,3 +23,27 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// Muestra el botón cuando el usuario se desplaza hacia abajo
+window.onscroll = function () {
+  mostrarBoton();
+};
+
+function mostrarBoton() {
+  const btn = document.getElementById("btnArriba");
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    btn.classList.add("show");
+  } else {
+    btn.classList.remove("show");
+  }
+}
+
+document.getElementById("btnArriba").addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
