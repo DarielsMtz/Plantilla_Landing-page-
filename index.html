@@ -14,8 +14,7 @@
     <meta property="og:description" content="Descripción de tu página" />
     <meta
       property="og:image"
-      content="URL de la imagen que quieres mostrar en las redes sociales"
-    />
+      content="URL de la imagen que quieres mostrar en las redes sociales" />
     <meta property="og:url" content="URL de tu página" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -23,8 +22,7 @@
     <meta name="twitter:description" content="Descripción de tu página" />
     <meta
       name="twitter:image"
-      content="URL de la imagen que quieres mostrar en Twitter"
-    />
+      content="URL de la imagen que quieres mostrar en Twitter" />
 
     <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
     <link rel="manifest" href="site.webmanifest" />
@@ -34,7 +32,7 @@
 
     <!-- links de estilos -->
     <link rel="stylesheet" href="css/style.css" />
-    
+
     <!-- Se cambia el tema de algunos navegadores -->
     <meta name="theme-color" content="#fafafa" />
     <!-- Código de las plataformas de Análisis -->
@@ -43,27 +41,30 @@
     <script src="preloader.js"></script>
   </head>
   <body>
-    <div id="container">
-      <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-      <!-- Header (encabezado de la página, zona superior) -->
-      <header>
-        <!-- nav (el navegador de toda la web) -->
-        <nav>
-          <a href="" class="link1">link1</a>
-          <a href="" class="link2">link2</a>
-          <a href="" class="link3">link3</a>
-          <a href="" class="link4">link4</a>
-        </nav>
-      </header>
-      <!-- Main (centro de la página, zona central) -->
-      <main>
-        <!-- section y article (posibilidades dentro de main) -->
-      </main>
-      <!-- Footer (final de la página, zona inferior) -->
-      <footer>
-        <h6>&copy;Copyright</h6>
-      </footer>
-    </div>
-
+    <main>
+      <section class="banner__principal">
+        <article class="banner__principal__info">
+          <h1>Explica que valor aporta tu producto</h1>
+          <h2>
+            Explica cómo va a solucionar los problemas que tienen tus
+            potenciales clientes
+          </h2>
+          <div class="banner__principal__btn">
+            <a href="#" class="banner__principal__btn--principal">
+              Acción Principal
+            </a>
+            <div class="banner__principal__btn--info">
+              <h6>⭐️⭐⭐⭐⭐</h6>
+              <h6>Muestra indicadores de confianza</h6>
+            </div>
+          </div>
+        </article>
+        <article class="banner__principal__imagen">
+          <img
+            src="/img/desktop/Rectangle 4.png"
+            alt="Una imagen visualmente atractiva" />
+        </article>
+      </section>
+    </main>
   </body>
 </html>
